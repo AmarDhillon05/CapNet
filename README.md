@@ -1,2 +1,4 @@
 # Flickr-captioning-with-encoder-decoder-RNNs
-This is a usage of an encoder-decoder based model similar to that of a transformer, with RNNs instead of attention blocks, to generate captions of images on the  Flickr-8k dataset
+This is a usage of an encoder-decoder based model similar to that of a transformer, with RNNs instead of attention blocks, to generate captions of images on the  Flickr-8k dataset. With this, I aimed to experiment with the transformer architecture and training, such as trying attention blocks according to the default transformer, and choosing whether to do predictions of a whole sentence like the default transformer was made to do. I eventually settled on a model based on Bidirectional RNNs for the decoder and an encoder similar to that of a transformer, as well as predicting just the next word and refining predictions across sentences using beam search, to achieve the best captions on the data.
+
+Link to dataset: https://www.kaggle.com/datasets/adityajn105/flickr8k
